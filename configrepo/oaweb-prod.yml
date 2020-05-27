@@ -1,0 +1,22 @@
+
+server:
+  port: 8002
+  
+spring:
+  datasource:
+    url: jdbc:mysql://localhost:3319/cityoa?useUnicode=true&characterEncoding=utf-8&autoReconnect=true&serverTimezone=GMT%2B8
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    username: cityoa
+    password: cityoa
+    
+mybatis:
+  mapper-locations:
+  - classpath*:com/city/oa/dao/xml/*.xml
+
+  type-aliases-package: com.city.oa.model
+
+logging:
+  level:
+    com.city.oa.dao: DEBUG 
+
+  

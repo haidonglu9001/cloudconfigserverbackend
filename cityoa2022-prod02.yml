@@ -1,0 +1,15 @@
+
+server:
+  port: 8102
+spring:
+  application:
+    name: oa2022
+  cloud:
+    consul:
+      host: localhost
+      port: 8500
+      discovery:
+        service-name: cityoa2022
+    
+
+
